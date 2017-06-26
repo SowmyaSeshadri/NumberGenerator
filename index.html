@@ -1,0 +1,58 @@
+<html>
+
+<head>
+
+    <title>Number Generator</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
+    <script src="jquery-1.6.1-min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="head row">
+      <h1>Simple Number Generator</h1><br/>
+      <p class="para">Copy,Paste,Submit !</p> <br/>
+       <p class="para">Make your text numbered, and more readable. Happy Numbering !</p> <br/>
+    </div>
+
+    <div class="row">
+      <div class="left col-lg-5 col-sm-12 col-md-12">
+        <p class="enter">Enter the text</p>
+        <textarea name="textarea" id="form" rows="10" cols="50"></textarea></br>
+        <button class="button btn btn-dflt" type="submit">Submit</button>
+      </div>
+      <div class="right col-lg-5 col-lg-offset-1 col-sm-12 col-md-12">
+        <div class="text lead"></div>
+      </div>
+</div>
+</div>
+</body>
+<script>
+$(function(){
+  $(".button").on("click",function(){
+    $(".text").empty()
+    var lines = $("#form").val().split('\n')
+  // alert(lines.length)
+    for(var i=0;i<lines.length;i++){
+      if(lines[i] == "")
+      return
+      $(".text").append(i+1 + ". "+lines[i]+ "</br>")
+      $(".text").css("height","40%")
+                .css("font-size","15px")
+                .css("border","1px solid black")
+
+      }
+
+    $("#form").val(" ")
+})
+})
+</script>
+<html>

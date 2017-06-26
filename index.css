@@ -1,0 +1,37 @@
+.container-fluid{
+background-color:#69F0AE;
+height: 100%;
+font-family: 'Spectral', serif;
+/*margin: 10px 100px 0px 100px;*/
+}
+.head{
+  text-align: center;
+}
+.para{
+  display: inline-block;
+  font-size: 20px;
+  }
+  h1{
+    display: inline-block;
+    background-color: #00BFA5;
+    border-radius: 10px;
+    padding:5px;
+    color:#1DE9B6;
+  }
+.left{
+  margin-left: 40px;
+  margin-top: 20px;
+  text-align: center;
+}
+.enter{
+  font-size: 18px;
+}
+.button{
+  margin-top: 20px;
+}
+.text{
+  background-color: #FFFFFF;
+  margin-top: 40px;
+  overflow-y: scroll;
+
+}
